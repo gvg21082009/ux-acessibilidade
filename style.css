@@ -1,0 +1,119 @@
+/* --- CONFIGURAÇÕES GERAIS --- */
+:root {
+    --secundario: #0056b3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* --- MENU DE ACESSIBILIDADE --- */
+.barra-acessibilidade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    z-index: 1000;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.botao-controle {
+    background: white;
+    color: #333;
+    border: 2px solid var(--secundario);
+    padding: 8px 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s;
+}
+
+.botao-controle:hover {
+    background: #e0e0e0;
+}
+
+.botao-leitura {
+    background: #28a745;
+    color: white;
+    border: none;
+}
+
+.botao-leitura:hover {
+    background: #218838;
+}
+
+/* --- BANNER E CONTEÚDO --- */
+.banner {
+    background-color: #e9ecef;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner h1 {
+    padding-top: 70px; /* Espaço para não ficar debaixo da barra fixa */
+    margin: 0;
+}
+
+main {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.secao-conteudo {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* --- MODAL --- */
+.modal-fundo {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-conteudo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 40px;
+    max-width: 90%;
+    width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 600px) {
+    .banner h1 {
+        padding-top: 110px; /* Ajuste para barras que quebram linha em telas menores */
+    }
+    main {
+        padding: 20px;
+    }
+}

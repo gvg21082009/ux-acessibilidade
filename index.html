@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança Digital para Idosos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MENU DE ACESSIBILIDADE -->
+    <nav class="barra-acessibilidade" aria-label="Controles de Acessibilidade">
+        <button id="btnAumentaTexto" class="botao-controle" title="Aumentar texto">A+ Aumentar</button>
+        <button id="btnDiminuiTexto" class="botao-controle" title="Diminuir texto">A- Diminuir</button>
+        <button id="btnVoz" class="botao-controle botao-leitura" title="Ouvir Página">🔊 Ouvir Página</button>
+        <button class="botao-controle" onclick="pararLeitura()" title="Parar Leitura">⏹️ Parar</button>
+    </nav>
+
+    <!-- BANNER / CABEÇALHO -->
+    <header class="banner">
+        <h1>Segurança Digital para Idosos</h1>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL (Lido pela voz) -->
+    <main>
+        <section class="secao-conteudo">
+            <h2>Dicas Importantes de Segurança</h2>
+            <p>Bem-vindo ao nosso portal. Aqui você aprenderá a navegar na internet com tranquilidade, evitando golpes e protegendo suas informações pessoais.</p>
+            
+            <button class="botao-ajuda">Ajuda / Mais Informações</button>
+        </section>
+    </main>
+
+    <!-- MODAL DE AJUDA -->
+    <div class="modal-fundo">
+        <div class="modal-conteudo">
+            <h2>Central de Ajuda</h2>
+            <p>Se tiver dúvidas, ligue para nossa central ou peça auxílio a um familiar de confiança.</p>
+            <button class="botao-ajuda botao-fechar">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
